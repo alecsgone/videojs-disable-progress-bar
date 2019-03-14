@@ -1,0 +1,49 @@
+{
+  "name": "videojs-disable-progress-bar",
+  "version": "0.1.0",
+  "author": {
+    "name": "Alekzander"
+  },
+  "main": "lib/DisableProgressBar.js",
+  "husky": {
+    "hooks": {
+      "pre-commit": "pretty-quick --staged",
+      "pre-push": "npm run eslint src"
+    }
+  },
+  "scripts": {
+    "dev": "webpack-dev-server",
+    "build": "webpack --config webpack.config.npm.js",
+    "eslint": "eslint",
+    "prebuild": "rimraf lib",
+    "prepublishOnly": "npm run build",
+    "test": "npx grunt qunit"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.3.4",
+    "babel-eslint": "^10.0.1",
+    "babel-loader": "^8.0.5",
+    "babel-preset-primavera": "^1.3.0",
+    "case-sensitive-paths-webpack-plugin": "^2.2.0",
+    "css-loader": "^2.1.1",
+    "eslint": "4",
+    "eslint-config-airbnb-base": "^13.1.0",
+    "eslint-config-prettier": "^4.1.0",
+    "eslint-plugin-import": "^2.16.0",
+    "eslint-plugin-prettier": "^3.0.1",
+    "html-webpack-plugin": "^3.2.0",
+    "husky": "^1.3.1",
+    "prettier": "^1.16.4",
+    "pretty-quick": "^1.10.0",
+    "rimraf": "^2.6.3",
+    "style-loader": "^0.23.1",
+    "video.js": "^7.4.1",
+    "webpack": "^4.29.6",
+    "webpack-cli": "^3.2.3",
+    "webpack-dev-server": "^3.2.1",
+    "webpack-node-externals": "^1.7.2"
+  },
+  "peerDependencies": {
+    "video.js": ">=6"
+  }
+}

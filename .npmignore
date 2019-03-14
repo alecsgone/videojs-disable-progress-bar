@@ -1,0 +1,17 @@
+# ignore dependencies and hidden system files
+bower_components
+node_modules
+.nyc_output/
+coverage/
+reports
+.DS_Store
+*.log
+test-results.xml
+src
+dist
+build
+spec
+examples/
+pages/
+assets/
+config/
