@@ -8,7 +8,7 @@ This videojs plugin allows you to disable video progress. Useful for preroll vid
 
 ## Getting Started
 
-- Check `src/example.js`
+- Check [src/example.js](src/example.js)
 
 ## API
 
